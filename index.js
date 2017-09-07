@@ -1,7 +1,7 @@
 import config from "./config";
-import Models from "./models";
+import { User, Product } from "./models";
 
-const user = new Models.User();
-const product = new Models.Product();
+const user = new User();
+const product = new Product();
 
 console.log(config.name);
