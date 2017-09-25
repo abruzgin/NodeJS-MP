@@ -1,0 +1,101 @@
+id,name,brand,company,price,isbn
+1,Ibuprofen,Ibuprofen,SUPERVALU INC.,$49.33 ,088373265-3
+2,Skin Protectant,Kids Eczema Balm,"Skinfix, Inc.",$3.45 ,775720992-7
+3,SALICYLIC ACID,Unagel,"Advanced Skin Technology, LLC",$42.06 ,240028186-6
+4,ethanol,LUCASOL Hand Instant Hand Sanitizer,Lucas Products Corporation,$19.14 ,977280233-3
+5,LAMOTRIGINE,LAMOTRIGINE,"PD-Rx Pharmaceuticals, Inc.",$40.46 ,119505990-6
+6,Omeprazole,Omeprazole,Dr. Reddy's Laboratories Limited,$49.88 ,487187180-0
+7,Olanzapine,Olanzapine,Dr.Reddy's Laboratories Inc,$30.26 ,849958554-X
+8,Alcohol,Hand Sanitizer,"Swinton Avenue Trading Ltd, Inc.",$39.00 ,311062878-3
+9,liothyronine sodium,Triostat,JHP Pharmaceuticals LLC,$41.43 ,067159864-3
+10,English Plantain,English Plantain,"Nelco Laboratories, Inc.",$22.64 ,473333375-7
+11,NEOMYCIN SULFATE,FAMILY CARE ANTIBIOTIC,UNITED EXCHANGE CORP.,$19.59 ,609725864-X
+12,Mineral Oil,Mineral Oil,"Shopko Stores Operating Co., LLC",$32.99 ,183449444-3
+13,Alcohol,Facilipro,Ecolab Inc.,$31.40 ,113871721-5
+14,ACYCLOVIR,ACYCLOVIR,DIRECT RX,$21.58 ,373432060-7
+15,Metoclopramide Hydrochloride,Metoclopramide Hydrochloride,REMEDYREPACK INC.,$38.07 ,701094236-6
+16,"BENZOCAINE, RESORCINOL",Vagicaine,"Personal Care Products, Inc.",$46.20 ,002573348-6
+17,ramipril,Ramipril,American Health Packaging,$48.53 ,042945787-1
+18,oxymetazoline hydrochloride,equate nasal,Wal-Mart Stores Inc,$22.89 ,510860304-5
+19,Titanium Dioxide,PERFECTION LUMIERE,CHANEL PARFUMS BEAUTE,$1.45 ,339827917-1
+20,Enalapril Maleate,Enalapril Maleate,"Golden State Medical Supply, Inc.",$46.52 ,444846301-X
+21,Iron,Ferrous Sulfate,"Boca Pharmacal, LLC",$39.04 ,895157442-3
+22,calcium carbonate,ANTACID,Target Corporation,$49.79 ,257022283-6
+23,Tacrolimus,Prograf,"Aphena Pharma Solutions - Tennessee, LLC",$37.28 ,224327491-4
+24,Amitriptyline Hydrochloride,Amitriptyline Hydrochloride,Unit Dose Services,$3.77 ,654670696-2
+25,Warfarin Sodium,Warfarin Sodium,ReadyMeds,$1.96 ,487647481-8
+26,Drospirenone and ethinyl estradiol,Gianvi,Teva Pharmaceuticals USA Inc,$20.78 ,307521369-1
+27,Etomidate,Etomidate,"American Regent, Inc.",$12.38 ,572827411-0
+28,Bupropion Hydrochloride,Bupropion Hydrochloride,Cardinal Health,$41.04 ,327218825-8
+29,Oxymorphone Hydrochloride,OPANA,Endo Pharmaceuticals,$43.90 ,288491482-X
+30,DOCUSATE SODIUM,DOCUSATE SODIUM,"Gemini Pharmaceuticals, Inc. dba ONDRA Pharmaceuticals",$18.58 ,133236634-1
+31,"Sulfacetamide Sodium, Sulfur","Sulfacetamide Sodium, Sulfur","Ascend Laboratories, LLC",$6.26 ,021240707-4
+32,Benzalkonium Chloride,Kleenex Foam Antibacterial Skin Cleanser,Kimberly-Clark Corporation,$15.02 ,169791208-7
+33,DIOSCOREA VILLOSA ROOT,COLIC,Natural Health Supply,$2.03 ,246271931-8
+34,Oxygen,Oxygen,American Welding & Gas,$24.17 ,725688941-0
+35,linezolid,Zyvox,Pharmacia and Upjohn Company,$43.78 ,028640060-X
+36,"Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate","Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate","Eon Labs, Inc.",$25.16 ,482413311-4
+37,ATORVASTATIN CALCIUM PROPYLENE GLYCOL SOLVATE,ATORVASTATIN CALCIUM,St Marys Medical Park Pharmacy,$15.19 ,611656940-4
+38,Benzocaine,Dollar General,Dollar General,$24.16 ,109225167-7
+39,SALICYLIC ACID,Hope In A Bottle,"Philosophy, Inc.",$17.00 ,186959886-5
+40,FEXOFENADINE HYDROCHLORIDE,FEXOFENADINE HYDROCHLORIDE,Sun Pharmaceutical Industries Limited,$12.50 ,713514190-3
+41,Baclofen,Baclofen,American Health Packaging,$20.89 ,585918566-9
+42,echothiophate iodide,Phospholine Iodide,"Wyeth Pharmaceuticals Inc., a subsidiary of Pfizer Inc.",$17.10 ,567241468-0
+43,DULOXETINE HYDROCHLORIDE,DULOXETINE,"Breckenridge Pharmaceutical, Inc.",$44.10 ,440207103-8
+44,ARBUTIN,Sooryehan Pure-Whitening Essential Starter,"LG Household and Healthcare, Inc.",$49.41 ,917302327-2
+45,"Octinoxate, Octisalate",Rimmel London,Lancaster S.A.M.,$41.26 ,905334515-9
+46,Aluminum Sesquichlorohydrate,LBEL,Ventura International Ltd,$19.24 ,075764307-8
+47,Tramadol Hydrochloride Extended-Release Tablets,Tramadol Hydrochloride,"Par Pharmaceutical, Inc.",$39.00 ,226638625-5
+48,Zolpidem Tartrate,Zolpidem Tartrate,Cardinal Health,$16.08 ,076772461-5
+49,Venlafaxine Hydrochloride,Venlafaxine Hydrochloride,Lake Erie Medical DBA Quality Care Products LLC,$25.26 ,784713094-7
+50,Oxcarbazepine,Oxcarbazepine,"Roxane Laboratories, Inc",$5.42 ,581158674-4
+51,Acetaminophen,Acetaminophen,Rebel Distributors Corp,$22.80 ,660667340-2
+52,Bismuth Subsalycilate,Threda,"Menper Distributors, Inc.",$31.69 ,403029723-4
+53,Nicotine polacrilex,nicotine,CVS Pharmacy,$4.33 ,835223361-0
+54,Quetiapine fumarate,Quetiapine fumarate,"Physicians Total Care, Inc.",$38.49 ,729547936-8
+55,"TITANIUM DIOXIDE, OCTINOXATE, ZINC OXIDE",ATOMY BB,"ATOMY CO., LTD.",$12.41 ,327950612-3
+56,Acetaminophen,Extra Strength Pain Relief,Bryant Ranch Prepack,$32.18 ,746455632-1
+57,Benzalkonium Chloride,BZK,"Jiangsu Province JianErKang Medical Dressing Co.,Ltd",$2.94 ,753300917-7
+58,Vancomycin Hydrochloride,Sterile Vancomycin Hydrochloride,Akorn - Strides LLC,$10.93 ,017225799-9
+59,Lamotrigine,Lamotrigine,Apotex Corp,$37.64 ,362769871-1
+60,lubiprostone,Amitiza,"Physicians Total Care, Inc.",$2.11 ,122238039-0
+61,"Ibuprofen, Pseudoephedrine HCl",ibuprofen cold relief,CVS Pharmacy,$24.51 ,350939928-5
+62,"Walnut, Black Juglans nigra","Pollens - Trees, Walnut, Black Juglans nigra",Jubilant HollisterStier LLC,$31.61 ,345802780-7
+63,Naproxen,Naproxen,REMEDYREPACK INC.,$9.60 ,323977355-4
+64,Felodipine,Felodipine,Mylan Pharmaceuticals Inc.,$7.32 ,807200061-6
+65,"GLYCERIN, DIMETHICONE",ORIGINAL POWER WHITENING AND LINELESS AMPOULE,"NATURE REPUBLIC CO., LTD.",$13.47 ,797135344-8
+66,Amlodipine besylate,Amlodipine besylate,"Exelan Pharmaceuticals, Inc.",$32.36 ,469514818-8
+67,UNDECYLENIC ACID,TERPENICOL,Blaine Labs Inc.,$9.09 ,410638064-1
+68,ALCOHOL,Almond Antibacterial Hand Sanitizer,"Harrison Specialty Co., Inc.",$21.46 ,363851495-1
+69,Ibuprofen,Ibuprofen,"NCS HealthCare of KY, Inc dba Vangard Labs",$12.70 ,780829893-X
+70,"Octinoxate, Oxybenzone, and Octisalate",Jane Seymour Natural Advantage,Guthy-Renker LLC,$38.19 ,538944630-5
+71,Bupropion Hydrochloride,Bupropion Hydrochloride,"Dispensing Solutions, Inc.",$13.68 ,569328702-5
+72,Acetaminophen,TYLENOL,"McNeil Consumer Healthcare Div. McNeil-PPC, Inc",$28.85 ,260109077-4
+73,thiothixene,Thiothixene,Mylan Pharmaceuticals Inc.,$14.31 ,516090783-1
+74,Metformin,Metformin Hydrochloride,"PD-Rx Pharmaceuticals, Inc.",$49.41 ,701672305-4
+75,"Allantoin , Dimethicone",Miracle Heel Repair,Winning Solutions,$18.60 ,209833608-X
+76,Leucovorin Calcium,Leucovorin Calcium,Barr Laboratories Inc.,$23.66 ,498066805-4
+77,acetaminophen,infants fever reducer and pain reliever,Rite Aid Corporation,$48.37 ,399081864-3
+78,Mineral Oil,Mineral Oil,CVS,$21.23 ,688495862-6
+79,Guaifenesin and DEXTROMETHORPHAN HYDROBROMIDE,Extra action Cough,Rugby Laboratories Inc.,$48.67 ,642663497-2
+80,telbivudine,Tyzeka,Novartis Pharmaceuticals Corporation,$25.75 ,874119879-4
+81,ZINC ACETATE ANHYDROUS and ZINC GLUCONATE,Zicam,"Matrixx Initiatives, Inc.",$27.58 ,285990099-3
+82,MINOXIDIL,BOSLEY PROFESSIONAL STRENGTH HAIR REGROWTH TREATMENT Regular Strength For Men,Pure Source Inc.,$28.75 ,731771242-6
+83,TITANIUM DIOXIDE,CLARINS Broad Spectrum SPF 15 Sunscreen Extra-Firming Foundation Tint 108,Laboratoires Clarins S.A.,$11.67 ,535974430-8
+84,Camphor (Synthetic) and Menthol,Tiger Balm,Haw Par Healthcare Ltd.,$14.59 ,706955368-4
+85,Warfarin Sodium,Warfarin Sodium,St Marys Medical Park Pharmacy,$33.43 ,552779580-6
+86,Losartan Potassium,Losortan Potassium,Bryant Ranch Prepack,$36.48 ,968115958-6
+87,Psyllium Husk,Metamucil,The Procter & Gamble Manufacturing Company,$37.62 ,925489901-1
+88,Cefprozil,Cefprozil,Sandoz Inc,$16.13 ,026651349-2
+89,TRICLOSAN,CAREONE,AMERICAN SALES COMPANY,$29.48 ,150511627-9
+90,Ibuprofen,Junior Strength Ibuprofen,"Shopko Stores Operating Co., LLC",$10.22 ,945626116-6
+91,"OCTINOXATE, OCTISALATE, TITANIUM DIOXIDE",FusionBeauty Colorceuticals PrimeResults Tinted Moisturizer SPF15 Golden Beige,Fusion Brands,$15.77 ,765615789-1
+92,Amoxicillin,Amoxicillin,Aidarex Pharmaceuticals LLC,$26.28 ,791516386-8
+93,"Acetaminophen, Dextromethorphan HBr, Doxylamine succinate",health mart night time cold and flu,McKesson,$30.69 ,145482770-X
+94,HYDROCORTISONE,good neighbor pharmacy anti itch,Amerisource Bergen,$2.31 ,582597755-4
+95,Naproxen Sodium,Leader All Day Pain Relief,Cardinal Health (Leader) 37205,$11.71 ,156304147-2
+96,Pinto Bean,Pinto Bean,"Antigen Laboratories, Inc.",$39.50 ,850179977-7
+97,SALICYLIC ACID,Clear Advantage,"Arbonne International, LLC",$19.76 ,258146887-4
+98,amitriptyline hydrochloride,Amitriptyline Hydrochloride,Cardinal Health,$44.95 ,151520021-3
+99,OXYCODONE HYDROCHLORIDE,OXYCODONE HYDROCHLORIDE,"CorePharma, LLC",$35.83 ,405181909-4
+100,Pseudoephedrine hydrochloride,Pseudoephedrine hydrochloride,Ohm Laboratories Inc.,$21.76 ,662781008-5

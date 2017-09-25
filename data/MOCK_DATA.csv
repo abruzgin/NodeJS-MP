@@ -1,0 +1,101 @@
+id,name,brand,company,price,isbn
+1,Bumetanid,Bumetanide,Mylan Institutional Inc.,$42.28 ,158995707-5
+2,"Juniperus virginiana, Lappa major, Rhamnus purshiana, Syzygium jambolanum, Chelidonium majus, Lycopodium clavatum, Myrtus communis, Natrum sulphuricum, Phosphoricum acidum, Phosphorus, Tarentula cuben",Pancreaforce,Apotheca Company,$21.18 ,042329202-1
+3,Aspirin,Low Dose Aspirin,"GREAT LAKES WHOLESALE, MARKETING, & SALES, INC.",$12.03 ,491425980-X
+4,Pulmo Ferrum,Pulmo Ferrumi,Uriel Pharmacy Inc.,$23.67 ,136397285-5
+5,CARBAMAZEPINE,Carbamazepine,State of Florida DOH Central Pharmacy,$22.91 ,612230084-5
+6,Guaifenesin,Little Remedies Little Colds Mucus Relief Expectorant Melt Aways,Medtech Products Inc.,$8.10 ,279432770-4
+7,Virginia Live Oaks,Virginia Live Oak,"Nelco Laboratories, Inc.",$23.99 ,157127655-6
+8,"Apis mellifica, Arsenicum album, Belladonna, Chamomilla, Ecinacea, Lachesis mutus, Mercurius solubilis,",Bac,Apotheca Company,$40.51 ,284698258-9
+9,ASAFETIDA,Flatulence,Natural Health Supplies,$32.90 ,295382531-2
+10,"DEXTROSE, SOYBEAN OIL, Electrolytes, Lysine, Phenylalanine, Leucine, Valine, Threonine, Methionine, Isoleucine, Tryptophan, Alanine, Arginine, Glycine, Proline, Histidine, Glutamic Acid, Serine, Aspartic Acid and Tyrosine",Kabiven,"Fresenius Kabi USA, LLC",$49.12 ,374316180-X
+11,celtis occidentalis pollen,HACKBERRY POLLENY,"Allergy Laboratories, Inc.",$13.05 ,372934677-6
+12,Diltiazem Hydrochloride,Diltiazem Hydrochloride,American Health Packaging,$11.42 ,395222422-7
+13,MIDAZOLAM HYDROCHLORIDE,Midazolam Hydrochloride,Cardinal Health,$32.98 ,119024909-X
+14,BENZALKONIUM CHLORIDE,Mertodol Solution,"Laboratorios Jaloma, S.A. de C.V.",$2.77 ,499963137-7
+15,Famotidine,Famotidine,Walmart Stores Inc.,$16.01 ,409770782-5
+16,LIDOCAINE HYDROCHLORIDE and DEXTROSE MONOHYDRATE,Lidocaine Hydrochloride and Dextrose,"Hospira, Inc.",$33.88 ,369126404-2
+17,ethionamide,Trecator,"Wyeth Pharmaceuticals Inc., a subsidiary of Pfizer Inc.",$34.22 ,962904771-3
+18,"Dextromethorphan Hydrobromide, Guaifenesin, and Phenylephrine Hydrochloride",Tussin CF,"davAgen Pharmaceutical, LLC",$28.29 ,604651202-6
+19,Lovastatin,Lovastatin,"AvKARE, Inc.",$38.49 ,717626271-3
+20,minoxidil,hair regrowth treatment,Kroger Company,$11.07 ,815575043-4
+21,Ketorolac Tromethamine,Ketorolac Tromethamine,Akorn Inc.,$20.28 ,509013913-X
+22,Titanium dioxide,CLE DE PEAU BEAUTE CREAM COMPACT FOUNDATION,"SHISEIDO CO., LTD.",$22.25 ,788581888-8
+23,amlodipine besylate and atorvastatin calcium,Amlodipine besylate/atorvastatin calcium,Mylan Pharmaceuticals Inc.,$40.00 ,744029534-X
+24,Hydrochlorothiazide,Hydrochlorothiazide,West-ward Pharmaceutical Corp,$22.78 ,223305402-4
+25,Allergenic Extracts Alum Precipitated,CENTER-AL - ULMUS PUMILA POLLEN,"ALK-Abello, Inc.",$16.34 ,022085801-2
+26,PULSATILLA VULGARIS and EUPHORBIA RESINIFERA RESIN and LUFFA OPSILVER NITRATEERCULATA FRUIT and MERCURIC IODIDE and SUS SCROFA NASAL MUCOSA and SILVER NITRATE and CALCIUM SULFIDE and SINUSITISINUM,Sinusin,Biologische Heilmittel Heel,$30.98 ,731987404-0
+27,Acetaminophen,Sunmark Infants Pain and Fever,McKesson,$43.84 ,922825257-X
+28,didanosine enteric-coated beadlets,Didanosine,Mylan Pharmaceuticals Inc.,$13.74 ,244934913-8
+29,Quetiapine fumarate,Quetiapine fumarate,"Physicians Total Care, Inc.",$34.14 ,092268929-6
+30,Aluminum Chlorohydrate,Ladys Choice Invisible Solid,"Church & Dwight Co., Inc.",$22.77 ,315887735-X
+31,"OCTINOXATE, OXYBENZONE",Aruba Aloe Very Water Resistant Sunscreen,"Aruba Aloe Balm, NV",$46.70 ,696551741-7
+32,Esterified Estrogens and Methyltestosterone,Esterified Estrogens and Methyltestosterone,ANIP Acquisition Company,$24.71 ,172712059-0
+33,Naphazoline Hydrochloride,Naphazoline,"Akorn, Inc.",$22.71 ,113789982-4
+34,"Acetaminophen, Dextromethorphan Hydrobromide, Phenylephrine HCI",Day Time,Rite Aid,$31.32 ,616900528-9
+35,ethyl alcohol,Zesty Lemon,Shanghai Weierya Daily Chemicals Factory,$29.43 ,834576034-1
+36,Cefuroxime Axetil,Cefuroxime Axetil,Gen-Source Rx,$32.90 ,824078482-8
+37,Triamterene and hydrochlorothiazide,Triamterene hydrochlorothiazide,Carilion Materials Management,$11.91 ,425513090-6
+38,"ACETAMINOPHEN, DEXTROMETHORPHAN HYDROBROMIDE, DOXYLAMINE SUCCINATE",Multi-Symptom Nitetime,P and L Development of New York Corporation (ReadyInCase),$47.60 ,375767885-0
+39,Sulfasalazine,Sulfasalazine,"Aphena Pharma Solutions - Tennessee, LLC",$10.97 ,229895496-8
+40,Flavoxate Hydrochloride,Flavoxate Hydrochloride,"Golden State Medical Supply, Inc.",$24.41 ,246457882-7
+41,"FERROUS FUMARATE, ASCORBIC ACID, INTRINSIC FACTOR , CYANOCOBALAMIN",HEMATOGEN,Nnodum Pharmaceuticals,$28.00 ,713286507-2
+42,bacitracin zinc neomycin sulfate polymyxin b sulfate,TRIPLE ANTIBIOTIC,"DOLGENCORP, LLC",$24.13 ,157187449-6
+43,Divalproex Sodium,Divalproex Sodium,REMEDYREPACK INC.,$45.46 ,094686258-3
+44,nicotine,NICOTINE,Target Corporation,$39.04 ,463765174-3
+45,RISPERIDONE,RISPERIDONE,WOCKHARDT USA LLC,$16.64 ,167848642-6
+46,Avobenzone and Octocrylene and Oxybenzone,Hawaiian Tropic Tanning Dry SPF 6,"Accra-Pac, Inc.",$36.22 ,385251311-1
+47,Mosquito,Mosquito,"Nelco Laboratories, Inc.",$39.28 ,264985371-9
+48,Fexofenadine Hydrochloride,Childrens Allegra Allergy,"Chattem, Inc.",$22.76 ,879105417-6
+49,Metoprolol Tartrate,Metoprolol Tartrate,Cardinal Health,$15.75 ,971245864-4
+50,TRICLOSAN,ANTIBACTERIAL FOAMING,HARRIS TEETER,$26.88 ,972336845-5
+51,AMBROSIA ARTEMISIIFOLIA - ANGUILLA ROSTRATA BLOOD SERUM - ARUNDO PLINIANA ROOT - BLACK CURRANT - CHELIDONIUM MAJUS - CITRIC ACID MONOHYDRATE - HISTAMINE DIHYDROCHLORIDE - HUMAN INTERLEUKIN 12 - INTERF,GUNA-ALLERGY-PREV,Guna spa,$30.02 ,321214955-8
+52,TITANIUM DIOXIDE,CLARINS Broad Spectrum SPF 20 Super Restorative Tinted Tint 04,Laboratoires Clarins S.A.,$42.73 ,623825456-4
+53,Red Cedar,JUNIPERUS VIRGINIANA POLLEN,"ALK-Abello, Inc.",$10.32 ,714984749-8
+54,"POLYETHYLENE GLYCOL 3350, SODIUM SULFATE, SODIUM CHLORIDE, POTASSIUM CHLORIDE, SODIUM ASCORBATE and ASCORBIC ACID",MOVIPREP,"Physicians Total Care, Inc.",$42.37 ,159920859-8
+55,METFORMIN HYDROCHLORIDE,METFORMIN HYDROCHLORIDE,St Marys Medical Park Pharmacy,$5.34 ,443295129-X
+56,collagenase clostridium histolyticum,XIAFLEX,"Auxilium Pharmaceuticals, Inc.",$2.53 ,491010045-8
+57,SAXAGLIPTIN,ONGLYZA,"E.R. Squibb & Sons, L.L.C.",$31.52 ,127114197-3
+58,ISOSORBIDE MONONITRATE,ISOSORBIDE MONONITRATE,Torrent Pharmaceuticals Limited,$3.84 ,904427606-9
+59,TITANIUM DIOXIDE,CLARINS Broad Spectrum SPF 15 Everlasting Foundation Tint 103,Laboratoires Clarins S.A.,$20.59 ,835516327-3
+60,Venlafaxine,Venlafaxine,BluePoint Laboratories,$29.19 ,457128442-X
+61,alcohol,Instant Hand Sanitizer,"Safetec of America, Inc.",$20.34 ,423324248-5
+62,URSODIOL,URSODIOL,STAT RX USA LLC,$36.29 ,946786154-2
+63,fluvoxamine maleate,FLUVOXAMINE MALEATE,"Caraco Pharmaceutical Laboratories, Ltd.",$18.26 ,968672823-6
+64,Hydroxyzine Hydrochloride,Hydroxyzine Hydrochloride,KAISER FOUNDATION HOSPITALS,$19.25 ,931624245-2
+65,Allantoin,REVERDIR PTD RENEW ESSENCE,"ADBIOTECH CO., LTD.",$25.75 ,667209308-7
+66,benzalkonium chloride,Hand Sanitizer,"Safetec of America, Inc.",$45.53 ,360364044-6
+67,glycerin,Dynamiclear ORO,Dynamiclear Pty Ltd,$1.99 ,861601827-1
+68,Ceftriaxone,Ceftriaxone,"APP Pharmaceuticals , LLC",$34.77 ,853667317-6
+69,bevacizumab,Avastin,"Genentech, Inc.",$28.36 ,033909986-0
+70,MERCURIUS VIVUS,TOTAL MERCURY,White Manufacturing Inc. DBA Micro-West,$11.94 ,205617283-6
+71,PANTOPRAZOLE SODIUM,Protonix,"Wyeth Pharmaceuticals Inc., a subsidiary of Pfizer Inc.",$10.01 ,629443322-3
+72,romiplostim,Nplate,Amgen Inc,$42.44 ,907324291-6
+73,Guaifenesin and Dextromethorphan Hydrobromide,Tussin DM,"Physicians Total Care, Inc.",$27.67 ,626735448-2
+74,"matricaria recutita, arabica coffee bean, tribasic calcium phosphate",Humphreys Baby Teething Relief Cherry Swift Strips,"Humphreys Pharmacal, Incorporated",$11.48 ,530579336-X
+75,pitavastatin calcium,Livalo,Eli Lilly and Company,$29.85 ,652633912-3
+76,TITANIUM DIOXIDE,SENSAI CELLULAR PERFORMANCE POWDER FOUNDATION,KANEBO COSMETICS INC,$22.73 ,904849053-7
+77,Methyl Salicylate and Menthol,Tiger Balm,Haw Par Healthcare Ltd.,$31.41 ,417954405-9
+78,Ropinirole Hydrochloride,Ropinirole Hydrochloride,"AvKARE, Inc.",$37.01 ,356260605-2
+79,"Calc Carb 30c, Calc Phos 30c, Eupatorium 30c, Guaicum 30c, Phosphoricum Acidum 30c, Ruta Grav 30c,",Growing Pains,Home Sweet Homeopathics,$42.04 ,714478922-8
+80,"Agnus, Allium sativum, Ambra, Angelica sinensis radix, Aralia quinquefolia, Arnica, Arsenicum alb., Avena, Baptisia, Baryta carb., Bryonia, Cantharis, Lachesis, Lycopodium, Nux vom., Phosphoricum ac., Pulsatilla, Ruta, Sabal, Selenium, Zinc. met., Ginkgo, Ruta, Organic, Cane Dispensing Alcohol",Prime Plus,"Newton Laboratories, Inc.",$12.47 ,253163264-6
+81,Molds - Mold Mix 10,Molds - Mold Mix 10,Jubilant HollisterStier LLC,$9.70 ,893115555-7
+82,Zolmitriptan,Zolmitriptan Orally Disintegrating,"Global Pharmaceuticals, Division of Impax Laboratories Inc.",$31.30 ,288797800-4
+83,iron sucrose,Venofer,"American Regent, Inc.",$8.97 ,782902142-2
+84,"OCTINOXATE, OXYBENZONE, OCTISALATE, and AVOBENZONE",Ceramide Lift And Firm Day Broad Spectrum Sunscreen SPF 30,"Elizabeth Arden, Inc",$17.86 ,470735933-7
+85,Tramadol Hydrochloride,Ultram,Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC,$30.88 ,571887709-2
+86,Diclofenac Sodium,Diclofenac Sodium,"Aphena Pharma Solutions - Tennessee, Inc.",$34.06 ,869000967-1
+87,White Birch,White Birch,"Nelco Laboratories, Inc.",$18.38 ,075220601-X
+88,sildenafil citrate,Viagra,Bryant Ranch Prepack,$42.58 ,634378931-6
+89,Ranitidine,Ranitidine,Proficient Rx LP,$20.38 ,441186536-X
+90,estropipate,Estropipate,"Physicians Total Care, Inc.",$27.60 ,467609633-X
+91,Risperidone,Risperidone,Apotex Corp.,$10.43 ,562477177-0
+92,SODIUM BICARBONATE,Neut Sodium Bicarbonate,"Hospira, Inc.",$28.44 ,897003979-1
+93,Sulindac,Sulindac,Bryant Ranch Prepack,$16.84 ,228160252-4
+94,METFORMIN HYDROCHLORIDE,METFORMIN HYDROCHLORIDE,Zydus Pharmaceuticals (USA) Inc.,$29.06 ,976943640-2
+95,"Pot marigold, bushmaster snake, black lead, oil of mustard seed",Homeopathic Scar,Indiana Botanic Gardens,$48.49 ,744961596-7
+96,Oxygen,Oxygen,Ivey Industries Inc.,$13.15 ,448292713-9
+97,Triamcinolone Acetonide,Triamcinolone Acetonide,Arbor Pharmaceuticals Inc.,$27.16 ,311113295-1
+98,Octinoxate and Titanium Dioxide,No7 Stay Perfect Foundation Sunscreen SPF 15 Truffle,BCM Cosmetique SAS,$10.82 ,597162713-9
+99,Sulfamethoxazole and Trimethoprim,Sulfamethoxazole and Trimethoprim,Unit Dose Services,$12.56 ,158778071-2
+100,ADEFOVIR DIPIVOXIL,ADEFOVIR DIPIVOXIL,"Sigmapharm Laboratories, LLC",$3.51 ,854527736-9
