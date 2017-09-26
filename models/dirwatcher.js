@@ -12,7 +12,7 @@ const csvToJSON = (content) => {
   lines.forEach((line, lIndex) => {
     if (lIndex !== 0) {
       const obj = {};
-      const currentLine = line.split(",");
+      const currentLine = line.replace(/(?!\B"[^"]*),(?![^"]*"\B)/g, ";").split(";");
       headers.forEach((header, hIndex) => {
         obj[header] = currentLine[hIndex];
       });
@@ -36,7 +36,7 @@ emitter.on("changed", (path, async) => {
 
 export default class DirWatcher {
   watch(path, delay) {
-    setTimeout(function() {
+    setTimeout(() => {
       fs.watch(path, {
         persistent: true,
       }, (event, filename) => {
