@@ -142,6 +142,6 @@ const runStreamTasks = (cliArgs) => {
   }
 }
 
-if (args && !module.parent) runStreamTasks(args);
+if (!module.parent) runStreamTasks(args);
 
 export default runStreamTasks;
