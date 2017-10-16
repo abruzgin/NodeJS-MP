@@ -1,7 +1,7 @@
 import minimist from "minimist";
 import fs from "fs";
 import path from "path";
-import http from "http";
+import https from "https";
 import { promisify } from "util";
 import through2 from "through2";
 import colors from 'colors'; // just for fun =)
@@ -68,29 +68,41 @@ const csvToJSONFile = (fileName) => {
 
 // task 8
 const readdir = promisify(fs.readdir);
-const httpGet = promisify(http.get);
 const cssBundleNames = ["cssBundle", "cssBundler", "css", "bundler"];
 const cssBundle = (dirname) => {
-  const writer = fs.createWriteStream(`${dirname}/bundle.css`);
+  const cssUrl = "https://www.epam.com/etc/clientlibs/foundation/main.min.fc69c13add6eae57cd247a91c7e26a15.css";
   readdir(dirname)
     .then((files) => {
+      if (!files || (files instanceof Array && files.length === 0)) {
+        console.info("No .css files to bundle".bgRed.white)
+        return ;
+      }
+
+      const writer = fs.createWriteStream(`${dirname}/bundle.css`, { flags: "a"});
       files.map((file) => {
-        fs.createReadStream(`${dirname}/${file}`)
-          .pipe(through2(function(chunk, enc, cb) {
-            const css = chunk.toString() + "\n";
-            this.push(css);
-            cb();
-          }))
-          // .pipe(process.stdout)
-          .pipe(fs.createWriteStream(`${dirname}/bundle.css`));
+        if (path.extname(file).toLowerCase() === ".css" && file !== "bundle.css") {
+          fs.createReadStream(`${dirname}/${file}`)
+            .pipe(through2(function(chunk, enc, cb) {
+              const css = chunk.toString() + "\n";
+              this.push(css);
+              cb();
+            }))
+            .pipe(writer);
+        }
+      });
+
+      const httpWriter = fs.createWriteStream(`${dirname}/bundle.css`, { flags: "a"});
+      httpWriter.on("finish", () => console.log("Closing writing".bgRed.white))
+      https.get(cssUrl, (res) => {
+        res.pipe(httpWriter);
       });
     })
-    .catch(err => console.log(2));
+    .catch(err => console.log(err));
 }
 
 const helpText = ("This tool will help you to run some stream utilities.\n" + 
                 "Just provide next options when calling a file to run your operation:\n\n").cyan +
-                ("--action, -a      Put here a method you want to call\n" + 
+                ("--action, -a       Put here a method you want to call\n" + 
                 "--file, -f         Provide here a file you want to be operated with action\n" + 
                 "--path, -p         For CSS bundling only; path to CSS files to concatenate\n" + 
                 "--help, -h         Call me for help =)\n").rainbow;
