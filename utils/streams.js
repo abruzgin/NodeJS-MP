@@ -1,8 +1,8 @@
-import minimist from "minimist";
 import fs from "fs";
 import path from "path";
 import https from "https";
 import { promisify } from "util";
+import minimist from "minimist";
 import through2 from "through2";
 import colors from 'colors'; // just for fun =)
 import config from "./../config";
@@ -108,33 +108,40 @@ const helpText = ("This tool will help you to run some stream utilities.\n" +
                 "--help, -h         Call me for help =)\n").rainbow;
 
 const args = minimist(process.argv.slice(2), config.streamsMinimistOpts);
-const argsKeys = Object.keys(args);
-argsKeys.forEach((arg, i) => {
-  if (i === 1 && (arg === 'h' || arg === 'help')) {
-    console.info(helpText);
+
+const runStreamTasks = (cliArgs) => {
+  const argsKeys = Object.keys(cliArgs);
+  argsKeys.forEach((arg, i) => {
+    if (i === 1 && (arg === 'h' || arg === 'help')) {
+      console.info(helpText);
+    }
+  });
+  
+  if (argsKeys.length < 2) {
+    console.info('No args found. If you donno what to do, add a "-h" or "--help" flag');
   }
-});
-
-if (argsKeys.length < 2) {
-  console.info('No args found. If you donno what to do, add a "-h" or "--help" flag');
+  
+  if(extractFileDataNames.includes(cliArgs.a) && cliArgs.f) {
+    extractFileData(cliArgs.f);
+  }
+  
+  if(inputOutputNames.includes(cliArgs.a)) {
+    inputOutput();
+  }
+  
+  if(csvToJSONConsoleNames.includes(cliArgs.a) && cliArgs.f) {
+    csvToJSONOut(cliArgs.f);
+  }
+  
+  if(csvToJSONFileNames.includes(cliArgs.a) && cliArgs.f) {
+    csvToJSONFile(cliArgs.f);
+  }
+  
+  if(cssBundleNames.includes(cliArgs.a) && cliArgs.p) {
+    cssBundle(cliArgs.p);
+  }
 }
 
-if(extractFileDataNames.includes(args.a) && args.f) {
-  extractFileData(args.f);
-}
+if (args && !module.parent) runStreamTasks(args);
 
-if(inputOutputNames.includes(args.a)) {
-  inputOutput();
-}
-
-if(csvToJSONConsoleNames.includes(args.a) && args.f) {
-  csvToJSONOut(args.f);
-}
-
-if(csvToJSONFileNames.includes(args.a) && args.f) {
-  csvToJSONFile(args.f);
-}
-
-if(cssBundleNames.includes(args.a) && args.p) {
-  cssBundle(args.p);
-}
+export default runStreamTasks;
