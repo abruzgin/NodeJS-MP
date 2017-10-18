@@ -7,5 +7,9 @@
       "file": "f",
       "path": "p"
     }
+  },
+  "exts": {
+    "csv": ".csv",
+    "css": ".css"
   }
 }
