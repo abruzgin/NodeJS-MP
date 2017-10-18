@@ -6,7 +6,7 @@ import minimist from "minimist";
 import through2 from "through2";
 import colors from 'colors';
 import config from "./../config";
-import { streamsCssUrl, streamsCssBundleFile, streamsHelpText } from "../constants/constants";
+import { streamsCssUrl, streamsCssBundleFile, streamsHelpText } from "../constants";
 import { csvToJSON } from './';
 
 const readdir = promisify(fs.readdir);
