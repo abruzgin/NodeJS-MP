@@ -1,3 +1,15 @@
 {
-  "name": "NodeMP HW App"
+  "name": "NodeMP HW App",
+  "streamsMinimistOpts": {
+    "alias": {
+      "help": "h",
+      "action": "a",
+      "file": "f",
+      "path": "p"
+    }
+  },
+  "exts": {
+    "csv": ".csv",
+    "css": ".css"
+  }
 }
