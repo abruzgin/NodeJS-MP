@@ -1,0 +1,11 @@
+{
+  "userCreds": {
+    "email": "bruzgin0103@gmail.com",
+    "password": "abc123",
+    "username": "alex_bruzgin"
+  },
+  "jwtCreds": {
+    "secret": "NodeJS_MP",
+    "session": false
+  }
+}
