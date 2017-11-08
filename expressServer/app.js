@@ -1,9 +1,11 @@
+import bodyParser from "body-parser";
+import passport from "passport";
 import cookieParser from './middlewares/cookieParser';
 import queryParser from './middlewares/queryParser';
-import bodyParser from "body-parser";
 import router from './routes';
 
 export default function(app) {
+  app.use(passport.initialize());
   app.use(cookieParser());
   app.use(queryParser());
   app.use(bodyParser.json());

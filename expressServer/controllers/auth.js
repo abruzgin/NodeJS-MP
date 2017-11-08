@@ -1,6 +1,10 @@
 import jwt from "jsonwebtoken";
+import passport from "passport";
 import config from "../config";
+import strategies from "../config/strategies";
 import { response } from "../bin";
+
+strategies(passport);
 
 export const auth = (req, res) => {
   if (!Object.keys(req.body).length) {
@@ -23,3 +27,13 @@ export const auth = (req, res) => {
     user: { email, username, password}
   }, token));
 };
+
+export const authLocal = (req, res) => {
+  passport.authenticate("local", (err, user, info) => {
+    console.log("\"My\" ", err, user, info)
+    if (err) {
+      return res.send(err);
+    }
+    return res.send(info);
+  })(req, res);
+}
