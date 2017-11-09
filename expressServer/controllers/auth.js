@@ -28,35 +28,8 @@ export const auth = (req, res) => {
   }, token));
 };
 
-export const authLocal = (req, res) => {
-  passport.authenticate("local", (err, user, info) => {
-    if (err) {
-      return res.send(err);
-    }
-    return res.send(info);
-  })(req, res);
-}
-
-export const authTwitter = (req, res) => {
-  passport.authenticate("twitter", (err, user, info) => {
-    if (err) {
-      return res.send(err);
-    }
-    return res.send(info);
-  })(req, res);
-}
-
-export const authFacebook = (req, res) => {
-  passport.authenticate("facebook", (err, user, info) => {
-    if (err) {
-      return res.send(err);
-    }
-    return res.send(info);
-  })(req, res);
-}
-
-export const authGoogle = (req, res) => {
-  passport.authenticate("google", (err, user, info) => {
+export const authPassport = (name) => (req, res) => {
+  passport.authenticate(name, (err, user, info) => {
     if (err) {
       return res.send(err);
     }
