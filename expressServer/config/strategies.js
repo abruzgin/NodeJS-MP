@@ -5,9 +5,10 @@ import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import config from "./";
 import { response } from "../bin";
 
-const { consumerKey, consumerSecret, callbackUrl: callbackURLTwitter} = config.strategies.twitter;
-const { clientID, clientSecret, callbackUrl: callbackURLFb} = config.strategies.facebook;
-const { clientID: googleID, clientSecret: googleSecret, callbackUrl: callbackURLGoogle} = config.strategies.google;
+const { consumerKey, consumerSecret, callbackURL: callbackURLTwitter} = config.strategies.twitter;
+const { clientID, clientSecret, callbackURL: callbackURLFb} = config.strategies.facebook;
+const { clientID: googleID, clientSecret: googleSecret, callbackURL: callbackURLGoogle} = config.strategies.google;
+
 export default function(passport) {
   passport.serializeUser((user, done) => done(null, user));
 
@@ -40,7 +41,7 @@ export default function(passport) {
       { token, tokenSecret }
     ));
   }));
-
+  
   passport.use('facebook', new FacebookStrategy({
     clientID, 
     clientSecret,
@@ -61,7 +62,7 @@ export default function(passport) {
   }, (token, refreshToken, profile, done) => {
     return done(null, profile, response(
       200,
-      "Facebook auth",
+      "Google auth",
       { user: profile },
       { token, refreshToken }
     ));
