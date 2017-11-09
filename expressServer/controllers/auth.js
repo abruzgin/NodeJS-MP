@@ -30,7 +30,33 @@ export const auth = (req, res) => {
 
 export const authLocal = (req, res) => {
   passport.authenticate("local", (err, user, info) => {
-    console.log("\"My\" ", err, user, info)
+    if (err) {
+      return res.send(err);
+    }
+    return res.send(info);
+  })(req, res);
+}
+
+export const authTwitter = (req, res) => {
+  passport.authenticate("twitter", (err, user, info) => {
+    if (err) {
+      return res.send(err);
+    }
+    return res.send(info);
+  })(req, res);
+}
+
+export const authFacebook = (req, res) => {
+  passport.authenticate("facebook", (err, user, info) => {
+    if (err) {
+      return res.send(err);
+    }
+    return res.send(info);
+  })(req, res);
+}
+
+export const authGoogle = (req, res) => {
+  passport.authenticate("google", (err, user, info) => {
     if (err) {
       return res.send(err);
     }
