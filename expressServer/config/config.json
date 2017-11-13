@@ -25,5 +25,10 @@
       "clientSecret": "O4OEoLxQ23nc8YO530oClOUQ",
       "callbackURL": "http://localhost:8080/api/auth/google/callback"
     }
+  },
+  "sessionConfig": { 
+    "secret": "8E3686BF2C6837033D6C2FE6147DD02650868BF8",
+    "resave": false,
+    "saveUninitialized": false
   }
 }
