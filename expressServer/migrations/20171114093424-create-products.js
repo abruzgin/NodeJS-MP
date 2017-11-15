@@ -18,10 +18,10 @@ module.exports = {
         type: Sequelize.FLOAT
       },
       options: {
-        type: Sequelize.ARRAY
+        type: Sequelize.STRING
       },
       reviews: {
-        type: Sequelize.ARRAY
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
