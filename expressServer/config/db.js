@@ -1,9 +1,13 @@
 import Sequelize from 'sequelize';
 import users from './../models/users';
 import products from './../models/products';
+import { dbConfig } from './';
+
+const dbEnv = dbConfig[process.env.SQL_DB_ENV] || dbConfig.development;
+const { dialect, username, host, port, password, database } = dbEnv;
 
 const db = {};
-const sequelize = new Sequelize("postgres://Aliaksandr_Bruzgin:1111@127.0.0.1:5432/NodeJS_MP_dev");
+const sequelize = new Sequelize(`${dialect}://${username}:${password}@${host}:${port}/${database}`);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
