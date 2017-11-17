@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "Aliaksandr_Bruzgin",
+    "password": "1111",
+    "database": "NodeJS_MP_dev",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  }
+}
