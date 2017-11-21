@@ -23,7 +23,14 @@ const citiesSchema = new Schema({
       type: Number,
       default: 0
     } 
-  }
+  },
+  lastModifiedDate: Date
 });
+
+citiesSchema.pre('save', function (next){
+  const date = new Date();
+  this.lastModifiedDate = date;
+  next();
+})
 
 export default mongoose.model('City', citiesSchema);

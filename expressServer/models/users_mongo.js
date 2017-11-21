@@ -24,7 +24,14 @@ const usersSchema = new Schema({
     required: true,
     minlength: [5, 'Password too short'],
     maxlength: [20, 'Password too long']
-  }
+  },
+  lastModifiedDate: Date
+});
+
+usersSchema.pre('save', function (next){
+  const date = new Date();
+  this.lastModifiedDate = date;
+  next();
 });
 
 export default mongoose.model('User', usersSchema);

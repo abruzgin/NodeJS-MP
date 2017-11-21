@@ -22,7 +22,14 @@ const productsSchema = new Schema({
   },
   reviews: {
     type: Array
-  }
+  },
+  lastModifiedDate: Date
+});
+
+productsSchema.pre('save', function (next){
+  const date = new Date();
+  this.lastModifiedDate = date;
+  next();
 });
 
 export default mongoose.model('Product', productsSchema);
