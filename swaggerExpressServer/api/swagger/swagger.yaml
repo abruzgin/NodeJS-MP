@@ -6,7 +6,7 @@ info:
   title: "NodeJS Mentoring Programm"
   contact:
     email: "aliaksandr_bruzgin@epam.com"
-host: "localhost:8080"
+host: "localhost:10010"
 basePath: "/api"
 tags:
 - name: "auth"

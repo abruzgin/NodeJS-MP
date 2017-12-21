@@ -10,7 +10,7 @@ function getAllCities(req, res) {
 }
 
 function createCity(req, res) {
-  const { name, country, capital, location} = req.swagger.body.value;
+  const { name, country, capital, location} = req.swagger.params.body.value;
   City.create({
     name,
     country,
@@ -35,7 +35,7 @@ function getRandomCity(req, res) {
 
 function updateCity(req, res) {
   const _id = req.swagger.params.id.value;
-  const body = req.swagger.body.value;
+  const body = req.swagger.params.body.value;
   const options = {
     new: true
   }

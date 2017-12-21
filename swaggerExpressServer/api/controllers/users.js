@@ -9,7 +9,7 @@ function getAllUsers(req, res) {
   });
 }
 function createUser(req, res) {
-  const { password, username, email } = req.swagger.body.value;
+  const { password, username, email } = req.swagger.params.body.value;
   User.create({
     password, username, email
   }, (err, user) => {

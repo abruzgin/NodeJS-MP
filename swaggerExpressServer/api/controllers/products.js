@@ -3,17 +3,20 @@
 const Product = require("../../../expressServer/models/cities_mongo");
 
 function getAllProducts(req, res) {
+  debugger;
   Product.find({}, (err, products) => {
     if (err) return res.send(`Error: ${err}`);
     return res.send(products);
   });
 }
 function createProduct(req, res) {
-  const { name, brand, price, options, reviews } = req.swagger.body.value;
+  const { name, brand, price, options, reviews } = req.swagger.params.body.value;
   Product.create({
     name, brand, price, options, reviews
   }, (err, product) => {
     if (err) return res.send(`Error: ${err}`);
+
+    console.log(product);
     return res.send(product);
   })
 }
