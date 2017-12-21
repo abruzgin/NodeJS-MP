@@ -1,4 +1,4 @@
-import mongoose from './../config/mongoose';
+const mongoose = require('./../config/mongoose') ;
 
 const Schema = mongoose.Schema;
 
@@ -31,5 +31,5 @@ productsSchema.pre('save', function (next){
   this.lastModifiedDate = date;
   next();
 });
-
-export default mongoose.model('Product', productsSchema);
+module.exports = mongoose.model('Product', productsSchema);
+// export default mongoose.model('Product', productsSchema);

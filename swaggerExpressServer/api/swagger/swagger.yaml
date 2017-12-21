@@ -1,0 +1,612 @@
+---
+swagger: "2.0"
+info:
+  description: "NodeJS Mentoring Programm"
+  version: "1.0.0"
+  title: "NodeJS Mentoring Programm"
+  contact:
+    email: "aliaksandr_bruzgin@epam.com"
+host: "localhost:8080"
+basePath: "/api"
+tags:
+- name: "auth"
+  description: "API for auth"
+- name: "users"
+  description: "API for users"
+- name: "cities"
+  description: "API for cities"
+- name: "products"
+  description: "API for products"
+schemes:
+- "http"
+paths:
+  /auth:
+    post:
+      tags:
+      - "auth"
+      summary: "Simple auth"
+      description: "Simple route for auth"
+      operationId: "auth"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "auth data"
+        required: true
+        schema:
+          $ref: "#/definitions/Auth_body"
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            $ref: "#/definitions/Auth"
+        400:
+          description: "Error"
+          schema:
+            $ref: "#/definitions/Error"
+  /auth/local:
+    post:
+      tags:
+      - "auth"
+      summary: "Simple loacl auth"
+      description: "Simple route for local auth"
+      operationId: "authLocal"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "auth data"
+        required: true
+        schema:
+          $ref: "#/definitions/Auth_body"
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "object"
+            properties: {}
+        400:
+          description: "Error"
+          schema:
+            $ref: "#/definitions/Error"
+  /auth/twitter:
+    post:
+      tags:
+      - "auth"
+      summary: "Simple twitter auth"
+      description: "Simple route for twitter auth"
+      operationId: "authTwitter"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "object"
+            properties: {}
+        400:
+          description: "Error"
+  /auth/facebook:
+    post:
+      tags:
+      - "auth"
+      summary: "Simple facebook auth"
+      description: "Simple route for facebook auth"
+      operationId: "authFacebook"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "object"
+            properties: {}
+        400:
+          description: "Error"
+  /auth/google:
+    post:
+      tags:
+      - "auth"
+      summary: "Simple google auth"
+      description: "Simple route for local auth"
+      operationId: "authGoogle"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "object"
+            properties: {}
+        400:
+          description: "Error"
+  /products:
+    x-swagger-router-controller: "products"
+    get:
+      tags:
+      - "products"
+      summary: "Get all products"
+      description: "Get all products"
+      operationId: "getAllProducts"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Product_response"
+        400:
+          description: "Error"
+    post:
+      tags:
+      - "products"
+      summary: "Create product"
+      description: "Create product"
+      operationId: "createProduct"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "data for product"
+        required: false
+        schema:
+          $ref: "#/definitions/Product_body"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Product_response"
+  /products/{id}:
+    x-swagger-router-controller: "products"
+    get:
+      tags:
+      - "products"
+      summary: "Get one product"
+      description: "Get one product"
+      operationId: "getProduct"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of a product"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            $ref: "#/definitions/Product_response"
+        400:
+          description: "Error"
+    delete:
+      tags:
+      - "products"
+      summary: "Delete product"
+      description: "Delete product"
+      operationId: "deleteProduct"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of a product"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "OK"
+        400:
+          description: "Error"
+  /producrs/{id}/reviews:
+    x-swagger-router-controller: "products"
+    get:
+      tags:
+      - "products"
+      summary: "Get all product's reviews"
+      description: "Get all product's reviews"
+      operationId: "getProductReviews"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of a product"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "array"
+            items:
+              type: "object"
+              properties: {}
+        400:
+          description: "Error"
+  /cities:
+    x-swagger-router-controller: "cities"
+    get:
+      tags:
+      - "cities"
+      summary: "Get all cities"
+      description: "Get all cities"
+      operationId: "getAllCities"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/City_response"
+        400:
+          description: "Error"
+    post:
+      tags:
+      - "cities"
+      summary: "Create city"
+      description: "Create city"
+      operationId: "createCity"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "data for product"
+        required: false
+        schema:
+          $ref: "#/definitions/City_body"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            $ref: "#/definitions/City_response"
+  /cities/random:
+    x-swagger-router-controller: "cities"
+    get:
+      tags:
+      - "cities"
+      summary: "Get random city"
+      description: "Get random city"
+      operationId: "getRandomCity"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "OK"
+          schema:
+            $ref: "#/definitions/City_response"
+  /cities/{id}:
+    x-swagger-router-controller: "cities"
+    put:
+      tags:
+      - "cities"
+      summary: "Update city info"
+      description: "Update city info"
+      operationId: "updateCity"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of a city"
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "data to update"
+        required: false
+        schema:
+          $ref: "#/definitions/City_body"
+      responses:
+        200:
+          description: "search results matching criteria"
+        400:
+          description: "Error"
+    delete:
+      tags:
+      - "cities"
+      summary: "Delete city"
+      description: "Delete city"
+      operationId: "deleteCity"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of a city"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "OK"
+        400:
+          description: "Error"
+  /users:
+    x-swagger-router-controller: "users"
+    get:
+      tags:
+      - "users"
+      summary: "Get all users"
+      description: "Get all users"
+      operationId: "getAllUsers"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "search results matching criteria"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/User_response"
+        400:
+          description: "Error"
+    post:
+      tags:
+      - "users"
+      summary: "Create user"
+      description: "Create user"
+      operationId: "createUser"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "data for user"
+        required: false
+        schema:
+          $ref: "#/definitions/User_body"
+      responses:
+        200:
+          description: "OK"
+          schema:
+            $ref: "#/definitions/User_response"
+  /users/{id}:
+    x-swagger-router-controller: "users"
+    delete:
+      tags:
+      - "users"
+      summary: "Delete user"
+      description: "Delete user"
+      operationId: "deleteUser"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of a user"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "OK"
+        400:
+          description: "Error"
+definitions:
+  Error:
+    type: "object"
+    properties:
+      code:
+        type: "string"
+        example: "400"
+      messsage:
+        type: "string"
+        example: "Bad"
+      data:
+        type: "string"
+  Auth_body:
+    type: "object"
+    properties:
+      email:
+        type: "string"
+      password:
+        type: "string"
+    example:
+      password: "password"
+      email: "email"
+  Auth:
+    type: "object"
+    properties:
+      code:
+        type: "string"
+        example: "200"
+      messsage:
+        type: "string"
+        example: "OK"
+      data:
+        type: "object"
+        properties: {}
+      token:
+        type: "string"
+    example:
+      code: "200"
+      data: "{}"
+      messsage: "OK"
+      token: "token"
+  Product_body:
+    type: "object"
+    required:
+    - "brand"
+    - "name"
+    properties:
+      name:
+        type: "string"
+        minLength: 3
+      brand:
+        type: "string"
+        minLength: 3
+      price:
+        type: "number"
+      options:
+        type: "array"
+        items:
+          type: "object"
+          properties: {}
+      reviews:
+        type: "array"
+        items:
+          type: "object"
+          properties: {}
+    example:
+      reviews:
+      - "{}"
+      - "{}"
+      price: 0.80082819046101150206595775671303272247314453125
+      name: "name"
+      options:
+      - "{}"
+      - "{}"
+      brand: "brand"
+  Product_response:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      brand:
+        type: "string"
+      price:
+        type: "number"
+      options:
+        type: "array"
+        items:
+          type: "object"
+          properties: {}
+      reviews:
+        type: "array"
+        items:
+          type: "object"
+          properties: {}
+      id:
+        type: "string"
+      lastModifiedDate:
+        type: "string"
+    example:
+      reviews:
+      - "{}"
+      - "{}"
+      lastModifiedDate: "lastModifiedDate"
+      price: 0.80082819046101150206595775671303272247314453125
+      name: "name"
+      options:
+      - "{}"
+      - "{}"
+      id: "id"
+      brand: "brand"
+  Location:
+    type: "object"
+    properties:
+      lat:
+        type: "number"
+      long:
+        type: "number"
+    example:
+      lat: 0.80082819046101150206595775671303272247314453125
+      long: 6.02745618307040320615897144307382404804229736328125
+  City_body:
+    type: "object"
+    required:
+    - "name"
+    properties:
+      name:
+        type: "string"
+      country:
+        type: "string"
+      capital:
+        type: "boolean"
+        default: false
+      location:
+        $ref: "#/definitions/Location"
+    example:
+      country: "country"
+      capital: false
+      name: "name"
+      location:
+        lat: 0.80082819046101150206595775671303272247314453125
+        long: 6.02745618307040320615897144307382404804229736328125
+  City_response:
+    type: "object"
+    required:
+    - "name"
+    properties:
+      name:
+        type: "string"
+      country:
+        type: "string"
+      capital:
+        type: "boolean"
+        default: false
+      location:
+        $ref: "#/definitions/Location"
+      id:
+        type: "string"
+      lastModifiedDate:
+        type: "string"
+    example:
+      country: "country"
+      capital: false
+      lastModifiedDate: "lastModifiedDate"
+      name: "name"
+      location:
+        lat: 0.80082819046101150206595775671303272247314453125
+        long: 6.02745618307040320615897144307382404804229736328125
+      id: "id"
+  User_body:
+    type: "object"
+    required:
+    - "email"
+    - "name"
+    - "password"
+    properties:
+      name:
+        type: "string"
+        minLength: 3
+      email:
+        type: "string"
+        minLength: 5
+      password:
+        type: "string"
+        minLength: 5
+        maxLength: 20
+    example:
+      password: "password"
+      name: "name"
+      email: "email"
+  User_response:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      email:
+        type: "string"
+      password:
+        type: "string"
+      lastModifiedDate:
+        type: "string"
+      id:
+        type: "string"
+    example:
+      password: "password"
+      lastModifiedDate: "lastModifiedDate"
+      name: "name"
+      id: "id"
+      email: "email"
