@@ -149,6 +149,8 @@ paths:
               $ref: "#/definitions/Product_response"
         400:
           description: "Error"
+          schema: 
+            type: "object"
     post:
       tags:
       - "products"
@@ -170,8 +172,6 @@ paths:
         200:
           description: "OK"
           schema:
-            type: "array"
-            items:
               $ref: "#/definitions/Product_response"
   /products/{id}:
     x-swagger-router-controller: "products"
@@ -196,6 +196,8 @@ paths:
             $ref: "#/definitions/Product_response"
         400:
           description: "Error"
+          schema: 
+            type: "object"
     delete:
       tags:
       - "products"
@@ -211,8 +213,12 @@ paths:
       responses:
         200:
           description: "OK"
+          schema: 
+            type: "object"
         400:
           description: "Error"
+          schema: 
+            type: "object"
   /producrs/{id}/reviews:
     x-swagger-router-controller: "products"
     get:
@@ -259,6 +265,8 @@ paths:
               $ref: "#/definitions/City_response"
         400:
           description: "Error"
+          schema: 
+            type: "object"
     post:
       tags:
       - "cities"
@@ -281,6 +289,10 @@ paths:
           description: "OK"
           schema:
             $ref: "#/definitions/City_response"
+        400:
+          description: "Error"
+          schema: 
+            type: "object"
   /cities/random:
     x-swagger-router-controller: "cities"
     get:
@@ -297,6 +309,10 @@ paths:
           description: "OK"
           schema:
             $ref: "#/definitions/City_response"
+        400:
+          description: "Error"
+          schema: 
+            type: "object"
   /cities/{id}:
     x-swagger-router-controller: "cities"
     put:
@@ -322,8 +338,12 @@ paths:
       responses:
         200:
           description: "search results matching criteria"
+          schema:
+            type: "object"
         400:
           description: "Error"
+          schema: 
+            type: "object"
     delete:
       tags:
       - "cities"
@@ -339,8 +359,12 @@ paths:
       responses:
         200:
           description: "OK"
+          schema: 
+            type: "object"
         400:
           description: "Error"
+          schema: 
+            type: "object"
   /users:
     x-swagger-router-controller: "users"
     get:
@@ -361,6 +385,8 @@ paths:
               $ref: "#/definitions/User_response"
         400:
           description: "Error"
+          schema: 
+            type: "object"
     post:
       tags:
       - "users"
@@ -383,6 +409,10 @@ paths:
           description: "OK"
           schema:
             $ref: "#/definitions/User_response"
+        400:
+          description: "Error"
+          schema: 
+            type: "object"
   /users/{id}:
     x-swagger-router-controller: "users"
     delete:
@@ -400,8 +430,12 @@ paths:
       responses:
         200:
           description: "OK"
+          schema:
+            type: "object"
         400:
           description: "Error"
+          schema: 
+            type: "object"
 definitions:
   Error:
     type: "object"

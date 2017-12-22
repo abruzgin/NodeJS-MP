@@ -5,8 +5,8 @@ const Product = require("../../../expressServer/models/cities_mongo");
 function getAllProducts(req, res) {
   debugger;
   Product.find({}, (err, products) => {
-    if (err) return res.send(`Error: ${err}`);
-    return res.send(products);
+    if (err) return res.json({Error: err});
+    return res.json(products);
   });
 }
 function createProduct(req, res) {
@@ -14,31 +14,30 @@ function createProduct(req, res) {
   Product.create({
     name, brand, price, options, reviews
   }, (err, product) => {
-    if (err) return res.send(`Error: ${err}`);
-
-    console.log(product);
-    return res.send(product);
+    if (err) return res.json({Error: err});
+    return res.json(product);
   })
 }
 function getProduct(req, res) {
   const id = req.swagger.params.id.value;
   Product.findById(id, (err, product) => {
-    if (err) return res.send(`Error: ${err}`);
-    return res.send(product);
+    if (err) return res.json({Error: err });
+    return res.json(product)
   });
 }
 function deleteProduct(req, res) {
   const _id = req.swagger.params.id.value;
+  console.log(_id)
   Product.remove({ _id }, (err, product) => {
-    if (err) return res.send(`Error: ${err}`);
-    return res.send("Product successfully deleted");
+    if (err) return res.json({Error: err });
+    return res.json({message: "Product successfully deleted"});
   });
 }
 function getProductReviews(req, res) {
   const id = req.swagger.params.id.value;
   Product.findById(id, (err, product) => {
-    if (err) return res.send(`Error: ${err}`);
-    return res.send(product.reviews);
+    if (err) return res.json({Error: err });
+    return res.json(product.reviews);
   });
 }
 
